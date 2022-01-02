@@ -9,6 +9,7 @@
   "scripts": {
     "build": "turbo run build",
     "dev": "turbo run dev --parallel",
+    "storybook": "turbo run ui#storybook --scope=*ui*",
     "lint": "turbo run lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },
@@ -31,6 +32,10 @@
         "outputs": []
       },
       "dev": {
+        "cache": false
+      }
+      ,
+      "ui#storybook": {
         "cache": false
       }
     }
